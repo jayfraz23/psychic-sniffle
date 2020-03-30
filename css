@@ -1,0 +1,278 @@
+*
+{
+padding: 0em;										/* Default padding */
+margin: 0em;										/* Default margins */
+}
+
+body
+{
+background: #33CCFF url('img/Backgroundhome.jpg') repeat-x;	/* Background image */
+
+padding: 2.5em 0em 2.5em 0em;						/* Distance from top and bottom */
+font-size: 1.0em;									/* Main font size */
+font-family: "helvetica", "verdana", sans-serif;	/* Fonts and backup typeface */
+color: #635440;                                     	/* Main text colour */
+
+}
+
+
+p
+{
+line-height: 1.0em;									/* Line height */
+margin: 1em 0em 1em 0em;							/* Margin before and after paragraph */
+text-align: justify;								/* Fully justified text */
+}
+
+a
+{
+color: #B96D00;										/* Hyperlink text colours*/
+text-decoration: underline;							/* Hyperlinks underlined */
+}
+
+h1
+{
+font-weight: normal;								/* Browser default font weight*/
+color: #FFFFFF;										/* Brown font colour*/
+font-size: 2.5em;									/* 2.5 x font size of users default settings */
+}
+
+h2,h3
+{
+display: inline;									/* Ensures no line breaks*/
+font-weight: bold;									/* Bold font*/
+}
+
+h2
+{
+font-size: 2.0em;									/* 2.0 x font size of users default settings */
+padding-right: 2em;									/* Sizes relating to users default settings*/
+}
+
+h3
+{
+font-size: 1.2em;									/* 1.2 x font size of users default settings*/
+padding-right: 2em;
+				 				                    /* Right padding to bring into line*/
+}
+
+
+
+h4
+{
+font-size: 0.8em;									/* .8 x font size of users default settings*/
+margin-bottom: 2.0em;								/* Margin after paragraph */
+}
+
+h5{
+clear: left;										/* No floating elements left */
+margin: 0.5em 0em 0.5em 0em;						/* Margin top and bottom */
+text-align: right;									/* Aligned right to bring into line on form */
+width: 25%;											/* Form width */
+}
+
+h6{
+font-size: 0.6em;									/* .6 x font size of users default settings*/
+}
+
+img
+{
+border: solid 1px #6F5230;							/* 1 pixel wide brown border around images*/
+}
+
+
+img.left
+{
+
+float: right;										/* floats image to left side*/
+margin: 1.0em 1.0em 1.0em 0em; 						/* right and bottom margins around image*/
+}
+
+img.center
+{
+float: right;
+margin: 1.0em 1.0em 1.0em 0em;
+
+
+}
+
+img.right
+{
+float: right;										/* floats image to left side*/
+margin: 1.0em 1.0em 1.0em 1.0em;						/* left and bottom margins around image*/
+}
+
+#wrapper
+{
+position: relative;
+width: 90%;											/* Provides a gap around whole content */
+border: solid 0.5em #F2EFEB;						/* Solid cream border around whole content */
+background-color: #fff;								/* default white background */
+margin: 0 auto;										/* Foces page to centralise */
+}
+
+#header
+{
+position: relative;									/* Sets position to follow wrapper fluidly */
+width: 100%;										/* 100% within wrapper */
+height: 7.5em;
+background: #33CCFF url('img/header2.jpg') repeat-x;	/* Background image */										/* Size for background and content */
+	/* Cream background if repeated image fails to load */
+}
+
+#headercontent										/* All attibutues used to manipulate postion only */
+{
+position: absolute;
+bottom: 0em;
+padding: 0em 2.0em 1.0em 2.0em;
+
+}
+
+#menu
+{
+position: relative;									/* Position follows header div */
+background: #F2EFEB;								/* Background colour */
+height: 3.5em;										/* Height of the navigation bar */
+padding: 0em 1.0em 0em 1.0em;						/* Left and right padding around text */
+}
+
+#menu ul
+{
+position: absolute;									/* Sets list positon within menu div */
+top: 1.1em;											/* Blank space above text */
+}
+
+#menu ul li
+{
+display: inline;									/* Sets menu list to display accross page */
+}
+
+#menu ul li a
+{
+padding: 0.5em 1.0em 0.9em 1.0em;					/* Space around each individual link */
+color: #000000;										/* Text colour */
+text-decoration: none;								/* Plain text decoration */
+}
+
+#menu ul li a:hover
+{
+text-decoration: underline;							/* When hover over hyperlink, underline */
+}
+
+#content
+{
+padding: 0em 0.5em 0em 0.5em;						/* white Left and Right space from edges*/
+}
+
+.contentarea
+{
+margin-bottom: 1.5em;								/* Provides a blank space after area */
+}
+
+.contentarea ul										/* ALl properties to manipulate postion of bibliography list */
+{
+position: relative;
+padding-left: 1.5em;
+}
+
+.contentarea ul li
+{
+padding: 0em 1.0em 1.0em 1.0em;
+}
+
+
+
+.white_content {
+display: none;										/* will not display element */
+position: absolute;									/* fixed position */
+top: 5%;											/* 5% gap along top */
+left: 5%;											/* 5% gap along left */
+width: 85%;											/* 85% wide*/
+height: 80%;										/* 80% height*/
+border: solid 0.5em #F2EFEB;						/* cream slim solid border*/
+background-color: white;							/* white in colour*/
+z-index:1002;										/* sets the stack order (below white) */
+overflow: hidden;									/* hidden element overflow*/
+}
+
+#footer
+{
+height: 1.5em;										/* Space to fit footer content */
+clear: both;										/* Ensures footer stays below floated images */
+padding-top: 2.0em;									/* Bank space between text and border */
+border-top: solid 0.5em #F2EFEB;					/* Soldid border around div, matches page border */
+font-size: 0.5em;									/* Font smaller than all text, related to default size */
+}
+
+#footer .left
+{
+position: absolute;									/* Forces position relative to footer */
+left: 1.0em;										/* Indentation */
+bottom: 1.2em;										/* Blank space at bottom */
+}
+
+#footer .right
+{
+position: absolute;									/* Forces position relative to footer */
+right: 1.0em;										/* indentation */
+bottom: 1.2em;										/* Blank space at bottom */
+}
+
+fieldset{
+float:left;										/* Form floated left */
+width: 98%; 									/* 98% wide */
+margin-top: 0.5em;	 							/* .5 em top margin */
+padding-left: 0.5em; 							/* .5 left padding to create gap */
+}
+
+legend{
+font-style: italic;					 			/* italic */
+font-weight: bold; 								/* bold */
+margin-bottom: 0.5em; 							/* bottom margin */
+}
+
+label {
+clear: left; 									/* find white space */
+float: left; 									/* float left*/
+margin-right: 1%; 								/* 1% margin right */
+margin-bottom: 0.5em; 							/* bottom margin*/
+text-align: right; 								/* right align */
+font-size: 0.9em;			 					/* 0.9 font size */
+width: 25%;
+display: block
+										            /* 25% wide */
+}
+
+input[type="text"]{ 								/* All input labelled text will float left, be automatic width and have a bottom margin */
+float: left;
+width: auto;
+margin-bottom: 0.5em;
+}
+
+select {											/* All select will float left, be automatic width and have a bottom margin */
+float: left;
+width: auto;
+margin-bottom: 0.5em;
+}
+
+input[id="from"], input[id="to"], input[id="nights"]{ /* All input labelled from, to or nights will float left, be automatic width and have a bottom margin */
+float: left;
+width: auto;
+margin-bottom: 0.5em;
+
+}
+
+input[type="radio"]{ 								/* All radio buttons will float left and have a bottom margin */
+float: left;
+margin-bottom: 0.5em;
+}
+
+input[type="checkbox"]{								/* All check boxes buttons will float left and have a bottom margin */
+float: left;
+margin-bottom: 0.5em;
+}
+
+input[type="submit"]								/* Submit button will look for white space and have a margin on top */
+{
+clear: left;
+margin-top: 1em;
+}
